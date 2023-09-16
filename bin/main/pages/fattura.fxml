@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FatturaTab">
+   <children>
+      <ListView fx:id="fatturaListView" layoutX="239.0" layoutY="34.0" prefHeight="661.0" prefWidth="656.0" />
+
+      <TextField fx:id="numeroFattura" layoutX="7.0" layoutY="42.0" prefHeight="26.0" prefWidth="226.0" promptText="Numero Fattura" />
+      <TextField fx:id="totale" layoutX="127.0" layoutY="75.0" prefHeight="26.0" prefWidth="106.0" promptText="Totale" />
+      <TextArea fx:id="descrizione" layoutX="7.0" layoutY="108.0" prefHeight="55.0" prefWidth="226.0" promptText="Descrizione" />
+      <TextField fx:id="metodoPagamento" layoutX="7.0" layoutY="169.0" prefHeight="26.0" prefWidth="226.0" promptText="Metodo di pagamento" />
+      <TextField fx:id="statoPagamento" layoutX="7.0" layoutY="201.0" prefHeight="26.0" prefWidth="226.0" promptText="Stato pagamento" />
+      <TextField fx:id="indirizzoFatturazione" layoutX="109.0" layoutY="234.0" prefHeight="26.0" prefWidth="123.0" promptText="Indirizzo Fatturazione" />
+      <TextField fx:id="nomeAzienda" layoutX="7.0" layoutY="267.0" prefHeight="26.0" prefWidth="226.0" promptText="Nome azienda" />
+      <TextField fx:id="partitaIva" layoutX="7.0" layoutY="302.0" prefHeight="26.0" prefWidth="226.0" promptText="Partita IVA" />
+      <TextField fx:id="numeroFatturaCancella" layoutX="4.0" layoutY="393.0" prefHeight="26.0" prefWidth="226.0" promptText="Numero Fattura" />
+      <TextField fx:id="numeroFatturaCerca" layoutX="6.0" layoutY="483.0" prefHeight="26.0" prefWidth="226.0" promptText="Numero Fattura" />
+      <Button layoutX="6.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveFattura" prefHeight="26.0" prefWidth="226.0" text="Registra nuova Fattura" />
+      <Button layoutX="5.0" layoutY="428.0" mnemonicParsing="false" onAction="#deleteFattura" prefHeight="26.0" prefWidth="226.0" text="Cancella Fattura" />
+      <Button layoutX="7.0" layoutY="516.0" mnemonicParsing="false" onAction="#searchFattura" prefHeight="26.0" prefWidth="226.0" text="Cerca Fattura" />
+      <Button layoutX="9.0" layoutY="578.0" mnemonicParsing="false" onAction="#seeFattura" prefHeight="26.0" prefWidth="226.0" text="Visualizza tutte Fatture" />
+      <Button fx:id="modificaFattura" layoutX="9.0" layoutY="612.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="226.0" text="Modifica Fattura" />
+      <Separator layoutX="27.0" layoutY="376.0" prefWidth="200.0" />
+      <Separator layoutX="27.0" layoutY="470.0" prefWidth="200.0" />
+      <Separator layoutX="27.0" layoutY="559.0" prefWidth="200.0" />
+      <DatePicker fx:id="dataEmissione" layoutX="7.0" layoutY="75.0" prefHeight="26.0" prefWidth="112.0" promptText="Data emissione" />
+      <DatePicker fx:id="dataScadenza" layoutX="7.0" layoutY="235.0" prefHeight="26.0" prefWidth="97.0" promptText="Data scadenza" />
+   </children>
+</Pane>

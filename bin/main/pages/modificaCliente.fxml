@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ClienteTab">
+   <children>
+      <TextField fx:id="partitaIvaModificare" layoutX="14.0" layoutY="14.0" promptText="Partita Iva Modificare" />
+      <TextField fx:id="partitaIvaNew" layoutX="350.0" layoutY="155.0" promptText="Partita Iva New" />
+      <TextField fx:id="nomeNew" layoutX="14.0" layoutY="49.0" promptText="Nome" />
+      <TextField fx:id="cognomeNew" layoutX="184.0" layoutY="50.0" promptText="Cognome" />
+      <TextField fx:id="indirizzoCivicoNew" layoutX="14.0" layoutY="84.0" promptText="Indirizzo Civico" />
+      <DatePicker fx:id="dataNascitaNew" layoutX="350.0" layoutY="50.0" promptText="Data Nascita" />
+      <TextField fx:id="cittaNew" layoutX="184.0" layoutY="85.0" promptText="Città " />
+      <TextField fx:id="provinciaNew" layoutX="350.0" layoutY="86.0" promptText="Provincia" />
+      <TextField fx:id="capNew" layoutX="14.0" layoutY="120.0" promptText="CAP" />
+      <TextField fx:id="paeseNew" layoutX="184.0" layoutY="121.0" promptText="Paese" />
+      <TextField fx:id="emailNew" layoutX="350.0" layoutY="121.0" promptText="Email" />
+      <TextField fx:id="numeroTelefonoNew" layoutX="14.0" layoutY="154.0" promptText="Numero di telefono" />
+      <TextField fx:id="professioneNew" layoutX="184.0" layoutY="155.0" promptText="Professione" />
+      <Button fx:id="back" layoutX="184.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="160.0" text="Torna Indietro" />
+      <Button layoutX="185.0" layoutY="237.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="26.0" prefWidth="160.0" text="Aggiorna Dati" />
+   </children>
+</AnchorPane>

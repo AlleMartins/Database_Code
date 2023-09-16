@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="view.ProdottoFinitoTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="idProdottoModificare" layoutX="14.0" layoutY="14.0" promptText="Id prodotto Modificare" />
+      <TextField fx:id="idProdottoNew" layoutX="193.0" layoutY="15.0" promptText="Id prodotto nuovo" />
+      <TextField fx:id="quantitaDisponibileNew" layoutX="14.0" layoutY="54.0" promptText="Quantità disponibile" />
+      <TextField fx:id="descrizioneNew" layoutX="193.0" layoutY="55.0" promptText="Descrizione" />
+      <TextField fx:id="documentazioneNew" layoutX="371.0" layoutY="56.0" promptText="Documentazione" />
+      <TextField fx:id="idProcessoNew" layoutX="14.0" layoutY="98.0" promptText="Id processo" />
+      <TextField fx:id="idConsegnaNew" layoutX="193.0" layoutY="99.0" promptText="Id consegna" />
+      <Button fx:id="back" layoutX="195.0" layoutY="144.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="160.0" text="Tornare indietro" />
+      <Button layoutX="195.0" layoutY="187.0" mnemonicParsing="false" onAction="#updateProdottoFinito" prefHeight="26.0" prefWidth="160.0" text="Aggiorna dati" />
+   </children>
+</AnchorPane>

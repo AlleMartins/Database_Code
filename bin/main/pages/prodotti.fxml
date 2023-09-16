@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProdottoTab">
+   <children>
+      <ListView fx:id="prodottiListView" layoutX="204.0" layoutY="33.0" prefHeight="665.0" prefWidth="689.0" />
+      <TextField fx:id="idProdotto" layoutX="7.0" layoutY="39.0" prefHeight="26.0" prefWidth="192.0" promptText="Id prodotto" />
+      <TextField fx:id="nomeProdotto" layoutX="7.0" layoutY="71.0" prefHeight="26.0" prefWidth="192.0" promptText="Nome Prodotto" />
+      <TextArea fx:id="descrizione" layoutX="3.0" layoutY="104.0" prefHeight="66.0" prefWidth="200.0" promptText="Descrizione" />
+      <TextField fx:id="categoriaProdotto" layoutX="3.0" layoutY="177.0" prefHeight="26.0" prefWidth="106.0" promptText="Categoria Prodotto" />
+      <TextField fx:id="prezzo" layoutX="119.0" layoutY="177.0" prefHeight="26.0" prefWidth="81.0" promptText="Prezzo" />
+      <TextField fx:id="disponibilita" layoutX="3.0" layoutY="211.0" prefHeight="26.0" prefWidth="192.0" promptText="Disponibilità" />
+      <TextField fx:id="documentazione" layoutX="3.0" layoutY="243.0" prefHeight="26.0" prefWidth="192.0" promptText="Documentazione" />
+      <TextField fx:id="licenzeProdotto" layoutX="3.0" layoutY="275.0" prefHeight="26.0" prefWidth="192.0" promptText="Licenze Prodotto" />
+      <TextField fx:id="idFornitore" layoutX="3.0" layoutY="308.0" prefHeight="26.0" prefWidth="192.0" promptText="Id Fornitore" />
+      <TextField fx:id="idProdottoCancella" layoutX="7.0" layoutY="393.0" prefHeight="26.0" prefWidth="192.0" promptText="Id prodotto" />
+      <TextField fx:id="idProdottoCerca" layoutX="7.0" layoutY="478.0" prefHeight="26.0" prefWidth="192.0" promptText="Id prodotto" />
+      <Button layoutX="4.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveProdotto" prefHeight="26.0" prefWidth="192.0" text="Registra nuovo prodotto" />
+      <Button layoutX="7.0" layoutY="427.0" mnemonicParsing="false" onAction="#deleteProdotto" prefHeight="26.0" prefWidth="192.0" text="Cancella prodotto" />
+      <Button layoutX="7.0" layoutY="512.0" mnemonicParsing="false" onAction="#searchProdotto" prefHeight="26.0" prefWidth="192.0" text="Cerca prodotto" />
+      <Button layoutX="4.0" layoutY="579.0" mnemonicParsing="false" onAction="#seeProdotto" prefHeight="26.0" prefWidth="192.0" text="Visualizza tutti prodotti" />
+      <Button fx:id="modificaProdotto" layoutX="3.0" layoutY="613.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="192.0" text="Modifica prodotto" />
+      <Separator layoutY="379.0" prefHeight="0.0" prefWidth="200.0" />
+      <Separator layoutX="3.0" layoutY="463.0" prefWidth="200.0" />
+      <Separator layoutX="3.0" layoutY="561.0" prefWidth="200.0" />
+   </children>
+</Pane>

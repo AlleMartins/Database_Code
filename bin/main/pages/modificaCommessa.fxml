@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="view.CommessaTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="idCommessaModificare" layoutX="14.0" layoutY="14.0" promptText="Id commessa modificare" />
+      <TextField fx:id="idCommessaNew" layoutX="192.0" layoutY="15.0" promptText="Id commessa nuovo" />
+      <TextField fx:id="descrizioneNew" layoutX="14.0" layoutY="49.0" promptText="Descrizione" />
+      <TextField fx:id="statoCommessaNew" layoutX="14.0" layoutY="87.0" promptText="Stato Commessa" />
+      <TextField fx:id="documentiAssociatiNew" layoutX="192.0" layoutY="87.0" promptText="Documenti Associati" />
+      <TextField fx:id="progettoNew" layoutX="376.0" layoutY="87.0" promptText="Progetto" />
+      <TextField fx:id="nomeAziendaNew" layoutX="14.0" layoutY="125.0" promptText="Nome azienda" />
+      <TextField fx:id="partitaIvaNew" layoutX="192.0" layoutY="126.0" promptText="Partita IVA" />
+      <TextField fx:id="ricPartitaIvaNew" layoutX="376.0" layoutY="126.0" promptText="Cliente partita IVA" />
+      <DatePicker fx:id="dataInizioNew" layoutX="184.0" layoutY="50.0" promptText="Data inizio" />
+      <DatePicker fx:id="dataFineNew" layoutX="378.0" layoutY="51.0" promptText="Data fine" />
+      <Button fx:id="back" layoutX="197.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="160.0" text="Torna indietro" />
+      <Button layoutX="197.0" layoutY="226.0" mnemonicParsing="false" onAction="#updateCommessa" prefHeight="26.0" prefWidth="160.0" text="Aggiorna dati" />
+   </children>
+</AnchorPane>

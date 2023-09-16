@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AziendaTab">
+   <children>
+      <ListView fx:id="aziendaListView" layoutX="204.0" layoutY="34.0" prefHeight="751.0" prefWidth="716.0" />
+      <TextField fx:id="nomeAzienda" layoutX="17.0" layoutY="14.0" prefHeight="26.0" prefWidth="173.0" promptText="Nome azienda" />
+      <TextField fx:id="indirizzo" layoutX="17.0" layoutY="46.0" prefHeight="26.0" prefWidth="173.0" promptText="Indirizzo" />
+      <TextField fx:id="citta" layoutX="15.0" layoutY="78.0" prefHeight="26.0" prefWidth="103.0" promptText="Citta" />
+      <TextField fx:id="provincia" layoutX="126.0" layoutY="78.0" prefHeight="26.0" prefWidth="66.0" promptText="Provincia" />
+      <TextField fx:id="cap" layoutX="20.0" layoutY="110.0" prefHeight="26.0" prefWidth="60.0" promptText="CAP" />
+      <TextField fx:id="paese" layoutX="90.0" layoutY="110.0" prefHeight="26.0" prefWidth="103.0" promptText="Paese" />
+      <TextField fx:id="settoreLavorativo" layoutX="20.0" layoutY="144.0" prefHeight="26.0" prefWidth="173.0" promptText="Settore Lavorativo" />
+      <TextField fx:id="numeroTelefono" layoutX="20.0" layoutY="177.0" prefHeight="26.0" prefWidth="173.0" promptText="Numero Telefono" />
+      <TextField fx:id="email" layoutX="20.0" layoutY="211.0" prefHeight="26.0" prefWidth="173.0" promptText="Email" />
+      <TextField fx:id="partitaIva" layoutX="20.0" layoutY="244.0" prefHeight="26.0" prefWidth="173.0" promptText="Partita IVA" />
+      <TextField fx:id="contoAziendale" layoutX="20.0" layoutY="276.0" prefHeight="26.0" prefWidth="173.0" promptText="Conto aziendale" />
+      <Button layoutX="20.0" layoutY="309.0" mnemonicParsing="false" onAction="#saveCompany" prefHeight="26.0" prefWidth="173.0" text="Registra nuova Azienda" />
+      <Separator layoutX="14.0" layoutY="349.0" prefHeight="4.0" prefWidth="183.0" />
+      <TextField fx:id="nomeAziendaCancella" layoutX="25.0" layoutY="359.0" prefHeight="26.0" prefWidth="173.0" promptText="Nome Azienda" />
+      <TextField fx:id="partitaIvaCancella" layoutX="25.0" layoutY="397.0" prefHeight="26.0" prefWidth="173.0" promptText="Partita IVA" />
+      <Button layoutX="25.0" layoutY="430.0" mnemonicParsing="false" onAction="#deleteCompany" prefHeight="26.0" prefWidth="173.0" text="Cancella Azienda" />
+      <Separator layoutX="20.0" layoutY="463.0" prefHeight="4.0" prefWidth="183.0" />
+      <TextField fx:id="nomeAziendaCerca" layoutX="25.0" layoutY="474.0" prefHeight="26.0" prefWidth="173.0" promptText="Nome Azienda" />
+      <TextField fx:id="partitaIvaCerca" layoutX="25.0" layoutY="508.0" prefHeight="26.0" prefWidth="173.0" promptText="Partita IVA" />
+      <Button layoutX="25.0" layoutY="540.0" mnemonicParsing="false" onAction="#searchCompany" prefHeight="26.0" prefWidth="173.0" text="Cerca Azienda" />
+      <Separator layoutX="15.0" layoutY="579.0" prefHeight="4.0" prefWidth="183.0" />
+      <Button layoutX="25.0" layoutY="591.0" mnemonicParsing="false" onAction="#seeCompanys" prefHeight="26.0" prefWidth="173.0" text="Visualizza tutte Azienda" />
+      <Button fx:id="modificaAzienda" layoutX="25.0" layoutY="624.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="173.0" text="Modifica Azienda" />
+      <Separator layoutX="43.0" layoutY="664.0" prefHeight="4.0" prefWidth="137.0" />
+   </children>
+</Pane>
