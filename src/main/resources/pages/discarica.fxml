@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DiscaricaTab">
+   <children>
+      <ListView fx:id="discaricaListView" layoutX="200.0" layoutY="32.0" prefHeight="664.0" prefWidth="696.0" />
+      <TextField fx:id="idDiscarica" layoutX="7.0" layoutY="38.0" prefHeight="26.0" prefWidth="188.0" promptText="Id discarica" />
+      <TextField fx:id="nomeDiscarica" layoutX="7.0" layoutY="71.0" prefHeight="26.0" prefWidth="85.0" promptText="Nome Discarica" />
+      <TextField fx:id="indirizzo" layoutX="97.0" layoutY="71.0" prefHeight="26.0" prefWidth="98.0" promptText="Indirizzo" />
+      <TextField fx:id="citta" layoutX="7.0" layoutY="104.0" prefHeight="26.0" prefWidth="85.0" promptText="Città" />
+      <TextField fx:id="provincia" layoutX="97.0" layoutY="104.0" prefHeight="26.0" prefWidth="98.0" promptText="Provincia" />
+      <TextField fx:id="cap" layoutX="7.0" layoutY="138.0" prefHeight="26.0" prefWidth="85.0" promptText="CAP" />
+      <TextField fx:id="paese" layoutX="97.0" layoutY="138.0" prefHeight="26.0" prefWidth="98.0" promptText="Nazione" />
+      <TextField fx:id="tipoRifiuti" layoutX="7.0" layoutY="170.0" prefHeight="26.0" prefWidth="188.0" promptText="Tipo Rifiuti" />
+      <TextField fx:id="gestore" layoutX="7.0" layoutY="237.0" prefHeight="26.0" prefWidth="188.0" promptText="Gestore" />
+      <TextField fx:id="idDiscaricaCancella" layoutX="7.0" layoutY="330.0" prefHeight="26.0" prefWidth="188.0" promptText="Id discarica" />
+      <TextField fx:id="idDiscaricaCerca" layoutX="7.0" layoutY="418.0" prefHeight="26.0" prefWidth="188.0" promptText="Id discarica" />
+      <Button layoutX="7.0" layoutY="269.0" mnemonicParsing="false" onAction="#saveDiscarica" prefHeight="26.0" prefWidth="188.0" text="Registra nuova Discarica" />
+      <Button layoutX="7.0" layoutY="364.0" mnemonicParsing="false" onAction="#deleteDiscarica" prefHeight="26.0" prefWidth="188.0" text="Cancella Discarica" />
+      <Button layoutX="7.0" layoutY="451.0" mnemonicParsing="false" onAction="#searchDiscarica" prefHeight="26.0" prefWidth="188.0" text="Cerca Discarica" />
+      <Button layoutX="7.0" layoutY="509.0" mnemonicParsing="false" onAction="#seeDiscarica" prefHeight="26.0" prefWidth="188.0" text="Visualizza tutte Discariche" />
+      <Button fx:id="modificaDiscarica" layoutX="7.0" layoutY="544.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="188.0" text="Modifica Discarica" />
+      <Separator layoutX="1.0" layoutY="310.0" prefWidth="200.0" />
+      <Separator layoutX="1.0" layoutY="404.0" prefWidth="200.0" />
+      <Separator layoutX="1.0" layoutY="496.0" prefWidth="200.0" />
+      <DatePicker fx:id="dataApertura" layoutX="-2.0" layoutY="206.0" prefHeight="26.0" prefWidth="98.0" promptText="Data Apertura" />
+      <DatePicker fx:id="dataChiusura" layoutX="93.0" layoutY="207.0" prefHeight="26.0" prefWidth="105.0" promptText="Data chiusura" />
+   </children>
+</Pane>

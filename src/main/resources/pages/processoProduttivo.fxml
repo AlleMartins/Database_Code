@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProcessoTab">
+   <children>
+      <ListView fx:id="proceProdListView" layoutX="222.0" layoutY="34.0" prefHeight="660.0" prefWidth="672.0" />
+      <TextField fx:id="idProcesso" layoutX="6.0" layoutY="41.0" prefHeight="26.0" prefWidth="210.0" promptText="Id processo" />
+      <TextField fx:id="nomeProcesso" layoutX="6.0" layoutY="74.0" prefHeight="26.0" prefWidth="210.0" promptText="Nome processo" />
+      <TextField fx:id="nomeAzienda" layoutX="6.0" layoutY="144.0" prefHeight="26.0" prefWidth="210.0" promptText="Nome Azienda" />
+      <TextField fx:id="partitaIva" layoutX="6.0" layoutY="177.0" prefHeight="26.0" prefWidth="210.0" promptText="Partita IVA" />
+      <TextField fx:id="idProcessoCancella" layoutX="6.0" layoutY="270.0" prefHeight="26.0" prefWidth="210.0" promptText="Id processo" />
+      <TextField fx:id="idProcessoCerca" layoutX="7.0" layoutY="364.0" prefHeight="26.0" prefWidth="210.0" promptText="Id processo" />
+      <Button layoutX="6.0" layoutY="211.0" mnemonicParsing="false" onAction="#saveProcessoProd" prefHeight="26.0" prefWidth="210.0" text="Registra nuovo Processo Produttivo" />
+      <Button layoutX="7.0" layoutY="303.0" mnemonicParsing="false" onAction="#deleteProcessoProd" prefHeight="26.0" prefWidth="210.0" text="Cancella processo produttivo" />
+      <Button layoutX="8.0" layoutY="398.0" mnemonicParsing="false" onAction="#searchProcessoProd" prefHeight="26.0" prefWidth="210.0" text="Cerca processo produttivo" />
+      <Button layoutX="7.0" layoutY="467.0" mnemonicParsing="false" onAction="#seeProcessoProd" prefHeight="26.0" prefWidth="210.0" text="Visualizza tutti processi produttivi" />
+      <Button fx:id="modificaProcessoProd" layoutX="8.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="210.0" text="Modifica processo produttivo" />
+      <Separator layoutX="13.0" layoutY="254.0" prefWidth="200.0" />
+      <Separator layoutX="7.0" layoutY="349.0" prefWidth="200.0" />
+      <Separator layoutX="13.0" layoutY="444.0" prefWidth="200.0" />
+      <DatePicker fx:id="dataInizio" layoutX="6.0" layoutY="110.0" prefHeight="26.0" prefWidth="100.0" promptText="Data inizio" />
+      <DatePicker fx:id="dataFine" layoutX="113.0" layoutY="110.0" prefHeight="26.0" prefWidth="100.0" promptText="Data fine" />
+   </children>
+</Pane>

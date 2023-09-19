@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="view.FatturaTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="numeroFatturaModificare" layoutX="14.0" layoutY="14.0" promptText="Numero fattura Modificare" />
+      <TextField fx:id="numeroFatturaNew" layoutX="195.0" layoutY="15.0" promptText="Numero fattura nuovo" />
+      <DatePicker fx:id="dataEmissioneNew" layoutX="14.0" layoutY="51.0" prefHeight="26.0" prefWidth="160.0" promptText="Data emissione" />
+      <TextField fx:id="descrizioneNew" layoutX="195.0" layoutY="51.0" promptText="Descrizione" />
+      <TextField fx:id="totaleNew" layoutX="375.0" layoutY="51.0" promptText="Totale" />
+      <TextField fx:id="metodoPagamentoNew" layoutX="14.0" layoutY="90.0" promptText="Metodo Pagamento" />
+      <TextField fx:id="statoPagamentoNew" layoutX="195.0" layoutY="90.0" promptText="Stato pagamento" />
+      <DatePicker fx:id="dataScadenzaNew" layoutX="375.0" layoutY="90.0" prefHeight="26.0" prefWidth="160.0" promptText="Data scadenza" />
+      <TextField fx:id="indirizzoFatturazioneNew" layoutX="14.0" layoutY="130.0" promptText="Indirizzo Fatturazione" />
+      <TextField fx:id="nomeAziendaNew" layoutX="195.0" layoutY="130.0" promptText="Nome Azienda" />
+      <TextField fx:id="partitaIvaNew" layoutX="375.0" layoutY="130.0" promptText="Partita Iva" />
+      <Button fx:id="back" layoutX="196.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="160.0" text="Torna indietro" />
+      <Button layoutX="196.0" layoutY="216.0" mnemonicParsing="false" onAction="#updateFattura" prefHeight="26.0" prefWidth="160.0" text="Aggiorna Dati" />
+   </children>
+</AnchorPane>

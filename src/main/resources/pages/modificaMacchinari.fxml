@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="view.MacchinariTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="idMacchinaModificare" layoutX="14.0" layoutY="14.0" promptText="Id Macchina Modificare" />
+      <TextField fx:id="idMacchinaNew" layoutX="193.0" layoutY="15.0" promptText="Id Macchina nuovo" />
+      <TextField fx:id="nomeMacchinaNew" layoutX="14.0" layoutY="50.0" promptText="Nome Macchina" />
+      <TextField fx:id="tipoMacchinaNew" layoutX="193.0" layoutY="51.0" promptText="Tipo Macchina" />
+      <TextField fx:id="marcaNew" layoutX="14.0" layoutY="89.0" promptText="Marca" />
+      <TextField fx:id="modelloNew" layoutX="193.0" layoutY="90.0" promptText="Modello" />
+      <TextField fx:id="capacitaLavorativaNew" layoutX="369.0" layoutY="91.0" promptText="Capacità Lavorativa" />
+      <Button fx:id="back" layoutX="192.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="160.0" text="Torna indietro" />
+      <Button layoutX="192.0" layoutY="168.0" mnemonicParsing="false" onAction="#updateMacchinari" prefHeight="26.0" prefWidth="160.0" text="Aggiorna Dati" />
+      <TextArea fx:id="descrizioneNew" layoutX="369.0" layoutY="15.0" prefHeight="66.0" prefWidth="200.0" promptText="Descrizione" />
+   </children>
+</AnchorPane>
